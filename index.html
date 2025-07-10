@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Smart Weather Predictor 🇮🇳</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <h1>Smart Weather Predictor</h1>
+      <div class="search-bar">
+        <select id="citySelect">
+          <option value="">Select a City</option>
+          <option value="Mumbai">Mumbai</option>
+          <option value="Delhi">Delhi</option>
+          <option value="Bengaluru">Bengaluru</option>
+          <option value="Chennai">Chennai</option>
+          <option value="Kolkata">Kolkata</option>
+          <option value="Hyderabad">Hyderabad</option>
+          <option value="Pune">Pune</option>
+        </select>
+        <button id="searchBtn">Check</button>
+      </div>
+      <div id="error" class="error"></div>
+      <div id="weatherCard" class="weather-card hidden">
+        <div class="top">
+          <div class="location" id="cityName"></div>
+          <img id="weatherIcon" alt="weather icon" />
+        </div>
+        <div class="temp" id="temperature"></div>
+        <div class="desc" id="condition"></div>
+        <div class="details">
+          <div><strong>Humidity:</strong> <span id="humidity"></span></div>
+          <div><strong>Wind:</strong> <span id="wind"></span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
+
+
